@@ -2,12 +2,12 @@ const products = [
   {
     _id: "1",
     name: "Airpods Wireless Bluetooth Headphones",
-    image: "/images/airpods.jpg",
+    image: "/media/images/airpods.jpg",  // Updated path
     description:
-      "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
+      "Bluetooth technology lets you connect it with compatible devices wirelessly. High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working.",
     brand: "Apple",
     category: "Electronics",
-    price: 89.99,
+    price: 79.99,
     countInStock: 0,
     rating: 4.5,
     numReviews: 12,
@@ -15,9 +15,9 @@ const products = [
   {
     _id: "2",
     name: "iPhone 11 Pro 256GB Memory",
-    image: "/images/phone.jpg",
+    image: "/media/images/phone.jpg",  // Updated path
     description:
-      "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
+      "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life.",
     brand: "Apple",
     category: "Electronics",
     price: 599.99,
@@ -28,9 +28,9 @@ const products = [
   {
     _id: "3",
     name: "Cannon EOS 80D DSLR Camera",
-    image: "/images/camera.jpg",
+    image: "/media/images/camera.jpg",  // Updated path
     description:
-      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
+      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design.",
     brand: "Cannon",
     category: "Electronics",
     price: 929.99,
@@ -41,9 +41,9 @@ const products = [
   {
     _id: "4",
     name: "Sony Playstation 4 Pro White Version",
-    image: "/images/playstation.jpg",
+    image: "/media/images/playstation.jpg",  // Updated path
     description:
-      "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
+      "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, or music.",
     brand: "Sony",
     category: "Electronics",
     price: 399.99,
@@ -54,9 +54,9 @@ const products = [
   {
     _id: "5",
     name: "Logitech G-Series Gaming Mouse",
-    image: "/images/mouse.jpg",
+    image: "/media/images/mouse.jpg",  // Updated path
     description:
-      "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
+      "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience.",
     brand: "Logitech",
     category: "Electronics",
     price: 49.99,
@@ -67,9 +67,9 @@ const products = [
   {
     _id: "6",
     name: "Amazon Echo Dot 3rd Generation",
-    image: "/images/alexa.jpg",
+    image: "/media/images/alexa.jpg",  // Updated path
     description:
-      "Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space",
+      "Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small spaces.",
     brand: "Amazon",
     category: "Electronics",
     price: 29.99,

@@ -46,7 +46,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/users/login/",
+      "http://amazing_cray:8000/api/users/login/",
       { username: email, password: password },
       config
     );
@@ -107,7 +107,7 @@ export const register = (name, email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/users/register/",
+      "http://amazing_cray:8000/api/users/register/",
       { name: name, email: email, password: password },
       config
     );
@@ -158,7 +158,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
     };
 
     // USING ${id} BECAUSE WHILE ACCESSING NORMAL USER WE'LL PASS STRING 'profile' BUT WHILE ACCESSING ADMIN PANEL WE'LL PASS THE 'id' SO LINK HAS TO BE DYNAMIC
-    const { data } = await axios.get(`/api/users/${id}/`, config);
+    const { data } = await axios.get(`http://amazing_cray:8000/api/users/${id}/`, config);
 
     /* IF GET REQUEST SUCCESSFULL WE DISPATCH & SEND THE PAYLOAD TO OUR REDUCER */
     dispatch({
@@ -197,7 +197,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
     };
 
     // USING ${id} BECAUSE WHILE ACCESSING NORMAL USER WE'LL PASS STRING 'profile' BUT WHILE ACCESSING ADMIN PANEL WE'LL PASS THE 'id' SO LINK HAS TO BE DYNAMIC
-    const { data } = await axios.put(`/api/users/profile/update`, user, config);
+    const { data } = await axios.put(`http://amazing_cray:8000/api/users/profile/update`, user, config);
 
     /* IF PUT REQUEST SUCCESSFULL WE DISPATCH & SEND THE PAYLOAD TO OUR REDUCER */
     dispatch({
@@ -244,7 +244,7 @@ export const listUsers = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/api/users/`, config);
+    const { data } = await axios.get(`http://amazing_cray:8000/api/users/`, config);
 
     dispatch({
       type: USER_LIST_SUCCESS,
@@ -281,7 +281,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.delete(`/api/users/delete/${id}`, config);
+    const { data } = await axios.delete(`http://amazing_cray:8000/api/users/delete/${id}`, config);
 
     dispatch({
       type: USER_DELETE_SUCCESS,
@@ -319,7 +319,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.put(
-      `/api/users/update/${user._id}/`,
+      `http://amazing_cray:8000/api/users/update/${user._id}/`,
       user,
       config
     );
